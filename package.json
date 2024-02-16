@@ -2,7 +2,7 @@
   "name": "good-weather",
   "displayName": "good-weather: immersive themes for vscode",
   "description": "Weather automatically manages your vscode theme",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "engines": {
     "vscode": "^1.86.0"
   },
