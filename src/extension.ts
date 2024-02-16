@@ -16,7 +16,7 @@ export function activate(context: vscode.ExtensionContext) {
    
 	let timeThemeDisposable = vscode.commands.registerCommand('extension.timeTheme', timeTheme);
 
-	let immersiveTheme = vscode.commands.registerCommand("extension.immerse", immersiveSessionTheme);
+	let immersiveTheme = vscode.commands.registerCommand("extension.immersive", immersiveSessionTheme);
 
 	let soundTheme = vscode.commands.registerCommand("extension.soundTheme", soundSessionTheme);
 	
