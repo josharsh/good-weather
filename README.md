@@ -1,8 +1,8 @@
-# Weather for VS Code
+# Good-Weather for VS Code
 
 ## Overview
 
-The Weather extension for Visual Studio Code (VS Code) offers a unique and immersive coding experience by automatically adjusting your editor's theme based on various contexts like the current weather, time of day, your mood, or even ambient sounds. It integrates seamlessly with VS Code, providing a tailored environment that can help improve focus, productivity, and overall coding enjoyment.
+The Good-Weather extension for Visual Studio Code (VS Code) offers a unique and immersive coding experience by automatically adjusting your editor's theme based on various contexts like the current weather, time of day, your mood, or even ambient sounds. It integrates seamlessly with VS Code, providing a tailored environment that can help improve focus, productivity, and overall coding enjoyment.
 
 ## Features
 
@@ -16,7 +16,7 @@ The Weather extension for Visual Studio Code (VS Code) offers a unique and immer
 
 1. Open Visual Studio Code.
 2. Navigate to the Extensions view by clicking on the square icon on the sidebar or pressing `Ctrl+Shift+X`.
-3. Search for "Weather" in the Extensions Marketplace.
+3. Search for "Good-Weather" in the Extensions Marketplace.
 4. Click on the Install button to add the extension to your VS Code.
 
 ## How to Use
