@@ -1,0 +1,46 @@
+{
+  "colors": {
+    "editor.background": "#000000",
+    "editor.foreground": "#CCCCCC",
+    "editor.selectionBackground": "#3399FF33",
+    "editor.selectionHighlightBackground": "#17ADADAD",
+    "editorCursor.foreground": "#FFFFFF",
+    "editorWhitespace.foreground": "#BFBFBF",
+    "editorIndentGuide.background": "#404040",
+    "editorLineNumber.foreground": "#008800",
+    "editorLineNumber.activeForeground": "#000000",
+    "editorRuler.foreground": "#5A5A5A",
+    "editorCodeLens.foreground": "#999999",
+    "editorBracketMatch.background": "#B4B4B4",
+    "editorBracketMatch.border": "#FFFFFF",
+    "editorOverviewRuler.border": "#666666",
+    "editorGutter.background": "#232323",
+    "editorError.foreground": "#FF0000",
+    "editorWarning.foreground": "#FFFF00",
+    "editorInfo.foreground": "#00FFFF",
+    "editorMarkerNavigation.background": "#FFFFFF",
+    "editorMarkerNavigationError.background": "#FF0000",
+    "editorMarkerNavigationWarning.background": "#FFFF00",
+    "editorMarkerNavigationInfo.background": "#00FFFF"
+  },
+  "tokenColors": [
+    {
+      "scope": ["comment", "punctuation.definition.comment"],
+      "settings": {
+        "foreground": "#008000"
+      }
+    },
+    {
+      "scope": ["keyword", "storage", "storage.type", "storage.modifier", "constant.language"],
+      "settings": {
+        "foreground": "#0000FF"
+      }
+    },
+    {
+      "scope": ["variable", "string"],
+      "settings": {
+        "foreground": "#A31515"
+      }
+    }
+  ]
+}

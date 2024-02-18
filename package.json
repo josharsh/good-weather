@@ -2,11 +2,14 @@
   "name": "good-weather",
   "displayName": "good-weather: immersive themes for vscode",
   "description": "Weather automatically manages your vscode theme",
-  "version": "0.0.5",
+  "icon": "logo.png",
+  "version": "0.0.14",
   "engines": {
-    "vscode": "^1.86.0"
+    "vscode": "^1.0.0"
   },
   "categories": [
+    "Extension Packs",
+    "Testing",
     "Other"
   ],
   "activationEvents": [],
@@ -16,6 +19,36 @@
   },
   "main": "./out/extension.js",
   "contributes": {
+    "sounds": [
+      {
+        "path": "src/media/nature.mp3",
+        "id": "weather-nature"
+      },
+      {
+        "path": "src/media/city-traffic.mp3",
+        "id": "weather-traffic-city"
+      },
+      {
+        "path": "src/media/flowing-water.mp3",
+        "id": "weather-flowing-water"
+      },
+      {
+        "path": "src/media/sitting-in-office.mp3",
+        "id": "weather-sitting-in-office"
+      },
+      {
+        "path": "src/media/waves.mp3",
+        "id": "weather-waves"
+      },
+      {
+        "path": "src/media/howling-wind.mp3",
+        "id": "weather-wind"
+      },
+      {
+        "path": "src/media/relaxing-rain.mp3",
+        "id": "weather-relaxing-rain"
+      }
+    ],
     "commands": [
       {
         "command": "extension.moodTheme",
@@ -36,6 +69,10 @@
       {
         "command": "extension.immersive",
         "title": "Weather: Choose an immersive theme"
+      },
+      {
+        "command": "extension.activateCustomTheme",
+        "title": "Weather: Custom Theme"
       }
     ]
   },
@@ -52,7 +89,7 @@
     "@types/mocha": "^10.0.6",
     "@types/node": "18.x",
     "@types/play-sound": "^1.1.2",
-    "@types/vscode": "^1.86.0",
+    "@types/vscode": "^1.0.0",
     "@typescript-eslint/eslint-plugin": "^6.19.1",
     "@typescript-eslint/parser": "^6.19.1",
     "@vscode/test-cli": "^0.0.4",

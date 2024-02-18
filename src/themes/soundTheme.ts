@@ -17,18 +17,16 @@ async function soundSessionTheme() {
     { label: "Flowing water", music: "flowing-water.mp3" },
     { label: "Howling Winds", music: "howling-wind.mp3" },
     { label: "Waves", music: "waves.mp3" },
+    { label: "Stop Playing", music: "" },
   ];
 
   const selectedMoodOption = await vscode.window.showQuickPick(moodOptions, { placeHolder: "Choose your sound session" });
 
   if (selectedMoodOption) {
     vscode.window.showInformationMessage(`Please put on your headphones for best experience`);
-    const musicPath = path.join(__dirname, '..', '..', 'src', 'media', `${selectedMoodOption.music}`);
-
-    if (currentPlayingAudioProcess) {
-      currentPlayingAudioProcess.kill();
-      currentPlayingAudioProcess = null;
-    }
+    const musicPath = path.join(__dirname, '..', 'media', `${selectedMoodOption.music}`);
+    
+    cleanUpCurrentAudioProcess();
     currentPlayingAudioProcess = player.play(musicPath, (err) => {
       if (err) { 
        vscode.window.showErrorMessage(`Could not play music: ${err}`);
@@ -39,4 +37,12 @@ async function soundSessionTheme() {
   }
 }
 
+function cleanUpCurrentAudioProcess() {
+  if (currentPlayingAudioProcess) {
+      currentPlayingAudioProcess.kill();
+      currentPlayingAudioProcess = null;
+  }
+}
+
+process.on('exit', cleanUpCurrentAudioProcess);
 export default soundSessionTheme;

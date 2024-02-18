@@ -24,12 +24,10 @@ async function immersiveSessionTheme() {
   if (selectedMoodOption) {
     vscode.window.showInformationMessage(`Please put on your headphones for best experience`);
     await vscode.workspace.getConfiguration().update("workbench.colorTheme", selectedMoodOption.theme, true);
-    const musicPath = path.join(__dirname, '..', '..', 'src', 'media', `${selectedMoodOption.music}`);
+    const musicPath = path.join(__dirname, '..', 'media', `${selectedMoodOption.music}`);
+    
 
-    if (currentPlayingAudioProcess) {
-      currentPlayingAudioProcess.kill();
-      currentPlayingAudioProcess = null;
-    }
+    cleanUpCurrentAudioProcess()
     currentPlayingAudioProcess = player.play(musicPath, (err) => {
       if (err) { 
        vscode.window.showErrorMessage(`Could not play music: ${err}`);
@@ -40,4 +38,12 @@ async function immersiveSessionTheme() {
   }
 }
 
+function cleanUpCurrentAudioProcess(){
+  if (currentPlayingAudioProcess) {
+    currentPlayingAudioProcess.kill();
+    currentPlayingAudioProcess = null;
+  }
+}
+
+process.on("exit", cleanUpCurrentAudioProcess);
 export default immersiveSessionTheme;
