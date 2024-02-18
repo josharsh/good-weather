@@ -14,7 +14,7 @@ The Good-Weather extension for Visual Studio Code (VS Code) offers a unique and 
 
 ## Demo
 
-[![Watch the video](preview.png)](https://www.loom.com/embed/d4794cd3ddf642bfba8375131483932d)
+[![Watch the video](video-preview.png)](https://www.loom.com/embed/d4794cd3ddf642bfba8375131483932d)
 ## Installation
 
 1. Open Visual Studio Code.
