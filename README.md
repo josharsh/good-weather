@@ -12,6 +12,10 @@ The Good-Weather extension for Visual Studio Code (VS Code) offers a unique and 
 - **Immersive Sessions with Sound**: Enhance your coding experience with thematic soundscapes that complement the visual theme, ranging from nature sounds to cityscapes.
 - **Customizable Sound and Theme Pairings**: Easily customize and add new sound-theme pairings for a personalized coding environment.
 
+## Demo
+<iframe width="640" height="339" src="https://www.loom.com/share/d4794cd3ddf642bfba8375131483932d?sid=4a5ed809-f6a6-44fd-a8a4-c6a2cb7e7055" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
 ## Installation
 
 1. Open Visual Studio Code.
